@@ -72,8 +72,13 @@ Data columns (total 32 columns):
  
  28  lookAheadType   198803 non-null  object   
  
- 29  lookAheadLag    198803 non-null  float64
- 30  patientSex      383278 non-null  object 
- 31  patientAge      383207 non-null  float64
-dtypes: float64(6), int64(8), object(18)
-memory usage: 96.5+ MB
+ 29  lookAheadLag    198803 non-null  float64  
+ 
+ 30  patientSex      383278 non-null  object   
+ 
+ 31  patientAge      383207 non-null  float64  
+ 
+dtypes: float64(6), int64(8), object(18)  
+
+memory usage: 96.5+ MB  
+
