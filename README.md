@@ -1,8 +1,10 @@
 # ccm
 chronicConditionsManagement
 
-dataframe column  
+## dataframe column  
 Index(['index', 'lastMod', 'askList', 'answerList', 'checkInList', 'complaint', 'record', 'advice', 'consultingType', 'patientVote', 'onlineCons', 'askLagTotal', 'answerLagTotal', 'checkInLag', 'checkInTitle', 'checkInType', 'withOffLine', 'timesCheckIn', 'askFreq', 'answerFreq', 'checkInFreq', 'satisficing', 'lookBackType1', 'lookBackLag1', 'lookBackType2', 'lookBackLag2', 'lookBackType3', 'lookBackLag3', 'lookAheadType', 'lookAheadLag', 'patientSex', 'patientAge'], dtype='object')  
+
+## dataframe info  
 
 <class 'pandas.core.frame.DataFrame'>  
 
@@ -10,10 +12,8 @@ Int64Index: 383278 entries, 0 to 383277
 
 Data columns (total 32 columns):  
 
- -   Column          Non-Null Count   Dtype  
+ ## Order   Column          Non-Null Count   Dtype  
  
----  ------          --------------   -----  
-
  0   index           383278 non-null  int64    
  
  1   lastMod         383278 non-null  object   
