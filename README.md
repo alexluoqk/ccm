@@ -1,10 +1,11 @@
 # Manuscript
 Predicting Counseling Behavioral Propensity Based on Temporal Return Visits Patterns and Current Perceived Intensity with Chronic Conditions Management
 
-## Feature varibles
+## Feature Dataframe
 Index(['index', 'lastMod', 'askList', 'answerList', 'checkInList', 'complaint', 'record', 'advice', 'consultingType', 'patientVote', 'onlineCons', 'askLagTotal', 'answerLagTotal', 'checkInLag', 'checkInTitle', 'checkInType', 'withOffLine', 'timesCheckIn', 'askFreq', 'answerFreq', 'checkInFreq', 'satisficing', 'lookBackType1', 'lookBackLag1', 'lookBackType2', 'lookBackLag2', 'lookBackType3', 'lookBackLag3', 'lookAheadType', 'lookAheadLag', 'patientSex', 'patientAge'], dtype='object')  
 
-## Criteria of sample inclusion and exclusion
+## Criteria of Dataframe Inclusion and Exclusion
+Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answer from physicians.
 ### Access 
 Original structured, semi-structured and unstructured chunks are crawled, and sentences in languages other than Chinese are replaced with null value and then jsonlized.
 ```python
@@ -36,11 +37,7 @@ def format(dataOri):
         if dataOri.loc[i+1,'num'] == 0:   
             temp = pd.DataFrame([[idx, last_mod, ask_list, answer_list, checkin_list, 
             info_list[0], 
-            info_list[1],
-            info_list[2],
-            info_list[3],
-            info_list[4],
-            info_list[5],
+            ...
             info_list[6]]], columns=dialogue.columns.values)
             dialogue = pd.concat([dialogue, temp], axis=0)
             #dialogue = dialogue.append(temp)
@@ -75,9 +72,6 @@ dateStr8 = dt.strptime('2022-01-01', '%Y-%m-%d')
 selected_condition3 = (pd.to_datetime(originalData.lastMod) >= dateStr5)&(pd.to_datetime(originalData.lastMod) <= dateStr6)
 selected_condition4 = (pd.to_datetime(originalData.lastMod) >= dateStr7)&(pd.to_datetime(originalData.lastMod) <= dateStr8)
 
-snsCondition1 = dtl.askLagTotal.values == 0
-snsCondition2 = dtl.answerLagTotal.values == 0
-dtl = dtl.drop(dtl[(snsCondition1)|(snsCondition2)].index)
 snsCondition3 = dialog.askLagTotal.values > 365
 snsCondition4 = dialog.answerLagTotal.values > 365
 dialog = dialog.drop(dialog[(snsCondition3)|(snsCondition4)].index)
@@ -117,27 +111,21 @@ chronicItem.to_csv('RecordItem.csv')
 2)	Clusterings are refined with various dimensionality reduction parameters by BERTopic models. Chronic items with top-ranked topics are selected with the best ranking of compact variety.
 ```python
 model = SentenceTransformer('trueto/medbert-base-chinese')
-
 ## trueto/medalbert-base-wwm-chinese
 ## trueto/medalbert-base-chinese
 # trueto/medbert-kd-chinese
 # trueto/medbert-base-chinese
-
 embeddings = model.encode(chronicdata['review_seg'].tolist(), show_progress_bar=True)
-
 sys.setrecursionlimit(1000000)
-
 umap_embeddings = umap.UMAP(n_neighbors=25,
                             n_components=10,
                             min_dist=0.00,
                             metric='cosine',
                             random_state=2020).fit_transform(embeddings)
-
 cluster = hdbscan.HDBSCAN(min_cluster_size=30,
                           metric='euclidean',
                           cluster_selection_method='eom', 
                           prediction_data=True).fit(umap_embeddings)
-
 umap_data = umap.UMAP(n_neighbors=15, 
                       n_components=2, 
                       min_dist=0.0,
