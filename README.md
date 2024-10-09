@@ -2,7 +2,1360 @@
 Predicting Counseling Behavioral Propensity Based on Temporal Return Visits Patterns and Current Perceived Intensity with Chronic Conditions Management
 
 ## Feature Dataframe
-Index(['index', 'lastMod', 'askList', 'answerList', 'checkInList', 'complaint', 'record', 'advice', 'consultingType', 'patientVote', 'onlineCons', 'askLagTotal', 'answerLagTotal', 'checkInLag', 'checkInTitle', 'checkInType', 'withOffLine', 'timesCheckIn', 'askFreq', 'answerFreq', 'checkInFreq', 'satisficing', 'lookBackType1', 'lookBackLag1', 'lookBackType2', 'lookBackLag2', 'lookBackType3', 'lookBackLag3', 'lookAheadType', 'lookAheadLag', 'patientSex', 'patientAge'], dtype='object')  
+Table. Concepts, indicators, and descriptions for expressions, samples, and variables in behavioral sequence and conversations.
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr style='height:5.65pt'>
+  <td rowspan=2 style='border-top:solid windowtext 1.5pt;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:none;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Concepts</span></b></p>
+  </td>
+  <td rowspan=2 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td rowspan=2 style='border-top:solid windowtext 1.5pt;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:none;padding:0cm 0cm 0cm 0cm;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Indicators</span></b></p>
+  </td>
+  <td rowspan=2 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td colspan=7 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Statics (“-” for categorical
+  variables)</span></b></p>
+  </td>
+  <td rowspan=2 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td rowspan=2 style='border-top:solid windowtext 1.5pt;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:none;padding:0cm 0cm 0cm 0cm;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Correlation</span></b></p>
+  </td>
+  <td rowspan=2 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td style='border:none;border-top:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Measurement</span></b></p>
+  </td>
+  <td rowspan=2 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td rowspan=2 style='border-top:solid windowtext 1.5pt;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:none;padding:0cm 0cm 0cm 0cm;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Content</span></b></p>
+  </td>
+  <td rowspan=2 style='border:none;border-top:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td rowspan=2 style='border-top:solid windowtext 1.5pt;border-left:none;
+  border-bottom:solid windowtext 1.5pt;border-right:none;padding:0cm 0cm 0cm 0cm;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Scope</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Max</span></b></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Min</span></b></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>S.D.</span></b></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>&nbsp;</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Mean</span></b></p>
+  </td>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><b><span
+  lang=ZH-CN style='font-size:9.0pt;font-family:SimSun;color:black'>（</span></b><b><span
+  lang=EN-US style='font-size:9.0pt;color:black'>Structure</span></b><b><span
+  lang=ZH-CN style='font-size:9.0pt;font-family:SimSun;color:black'>）</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Return visits</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>type</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>lookaheadType</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Dependent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>The next behavioral type</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Temporal sequence</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>lookbackType</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Return visits type</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Temporal sequence</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Return visits</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>timing</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>lookaheadLag</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(days)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>9999</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>0</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>4945.56</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>4879.24</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Dependent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Continuous</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Semi-structured)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>The next behavioral timing</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Temporal sequence</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>lookbackLag</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(days)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>9999</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>1</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>4666.84</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>6582.69</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Continuous</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Semi-structured)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Intervals between return visits</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Temporal sequence</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Counseling</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>frequency</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>visitFreq</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(times)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>50</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>1</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>3.70</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>2.93</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Semi-structured)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Frequency of return visits</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Temporal sequence</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=4 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Dialogue</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>frequency</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>askFreq</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(times)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>19</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>1</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>4.00</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>6.76</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Semi-structured)</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Frequency of asking from patients
+  describing passion with urgency</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>askLag</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(days)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>363</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>0</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>24.39</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>5.72</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>answerFreq</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(times)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>18</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>1</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>2.71</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>6.30</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Semi-structured)</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Frequency of physicians’ response describing
+  passion with patience</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>answerLag</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(days)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>365</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>0</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>35.04</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>10.20</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Satisficing on physicians</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>patientVotes</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>4474</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>0</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>559.77</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>384.74</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Continuous</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Satisficing on physicians</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Sum of counseling</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=2 style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>onlineCons</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>89028</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>2</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>9106.02</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>7296.91</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=2 style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Socioeconomic Status</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><a name="OLE_LINK2"><span
+  lang=EN-US style='font-size:9.0pt;color:black'>gender</span></a></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Socioeconomic level</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>age</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>99</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>1</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>19.73</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>30.91</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Socioeconomic level</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Sentiment</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>sentiPolarity</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Continuous</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Unstructured)</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Weighted polarized sentiment polarity</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Counseling</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>timestamps</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>lastModified</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Discrete</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Periods for pandemic-sensitive or
+  alternatives</span></p>
+  </td>
+  <td style='padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Temporal sequence</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Dialogue</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>content</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>askText</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>-</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Independent</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>(Unstructured)</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Counseling from patient</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>&nbsp;</span></p>
+  </td>
+  <td rowspan=6 style='border:none;border-bottom:solid windowtext 1.5pt;
+  padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Current</span></p>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Conversation</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>answerText</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Response from physicians</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>title</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Counseling title</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>complaint</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Complaint from patients</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>record</span></p>
+  </td>
+  <td style='padding:0cm 0cm 0cm 0cm;height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Diagnosis form physicians</span></p>
+  </td>
+ </tr>
+ <tr style='height:5.65pt'>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 0cm 0cm 0cm;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>advice</span></p>
+  </td>
+  <td style='border:none;border-bottom:solid windowtext 1.5pt;padding:0cm 0cm 0cm 0cm;
+  height:5.65pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:9.0pt;color:black'>Advice from physicians</span></p>
+  </td>
+ </tr>
+</table>
 
 ## Criteria of Dataframe Inclusion and Exclusion
 Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answer from physicians.
