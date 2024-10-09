@@ -1430,7 +1430,7 @@ snsCondition4 = dialog.answerLagTotal.values > 365
 dialog = dialog.drop(dialog[(snsCondition3)|(snsCondition4)].index)
 ```
 ### Filtering
-Items with proper sentence lengths are keeped, ones with extreme short sentence are eliminated, and ones with out-of-range, maximum and minimum values are removed.
+Items with proper sentence lengths are included, ones with extreme short sentence are eliminated, and ones with out-of-range, maximum and minimum values are removed.
 ```python
 textText.text_length.quantile(0.1)
 textText = textText[textText['text_length'] > 1]
