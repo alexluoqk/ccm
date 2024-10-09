@@ -2,7 +2,7 @@
 Predicting Counseling Behavioral Propensity Based on Temporal Return Visits Patterns and Current Perceived Intensity with Chronic Conditions Management
 
 ## Feature Dataframe
-Table. Concepts, indicators, and descriptions for expressions, samples, and variables in behavioral sequence and conversations.
+### Table. Concepts, indicators, and descriptions for expressions, samples, and variables in behavioral sequence and conversations.
 <table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
  style='border-collapse:collapse;border:none'>
  <tr style='height:5.65pt'>
@@ -1356,6 +1356,7 @@ Table. Concepts, indicators, and descriptions for expressions, samples, and vari
   </td>
  </tr>
 </table>
+
 ## Criteria of Dataframe Inclusion and Exclusion
 Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answer from physicians.
 ### Access 
