@@ -1356,7 +1356,6 @@ Table. Concepts, indicators, and descriptions for expressions, samples, and vari
   </td>
  </tr>
 </table>
-
 ## Criteria of Dataframe Inclusion and Exclusion
 Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answer from physicians.
 ### Access 
