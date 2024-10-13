@@ -1358,7 +1358,7 @@ Predicting Counseling Behavioral Propensity Based on Temporal Return Visits Patt
 </table>
 
 ## Criteria of Dataframe Inclusion and Exclusion
-Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answer from physicians.
+Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answers from physicians.
 ### Access 
 Original structured, semi-structured, and unstructured chunks are crawled, sentences in languages other than Chinese are replaced with null values and then serialized.
 ```python
@@ -1494,8 +1494,7 @@ def extract_top_n_words_per_topic(tf_idf, count, docs_per_topic, n=20):
     top_n_words = {label: [(words[j], tf_idf_transposed[i][j]) for j in indices[i]][::-1] for i, label in enumerate(labels)}
     return top_n_words
 ```
-Finally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answers from physicians.
-
+Med-BERT-based chronic topic clustering results by text embedding and UMAP dimensional reduction with “Med-BERT-base-Chinese”.
 ![image](https://github.com/alexluoqk/ccm/blob/master/resultCluster.png)
 
 ## Dataframe Column Details
