@@ -1360,7 +1360,7 @@ Predicting Counseling Behavioral Propensity Based on Temporal Return Visits Patt
 ## Criteria of Dataframe Inclusion and Exclusion
 Totally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answer from physicians.
 ### Access 
-Original structured, semi-structured and unstructured chunks are crawled, and sentences in languages other than Chinese are replaced with null value and then jsonlized.
+Original structured, semi-structured, and unstructured chunks are crawled, sentences in languages other than Chinese are replaced with null values and then serialized.
 ```python
 def format(dataOri):
     idx = 0
@@ -1414,7 +1414,7 @@ except Exception as e:
     print("exception", e)
 ```
 ### Aligning
-Timestamps selections are based on our full-course observations and contain items sampling the whole-course counseling which are recorded from Jan. 1st, 2018 to Dec. 15th, 2022. ID are aligned by eliminating blank samples and obvious contradictory ones with inconsistent user complaints and interactions contents are removed.
+Timestamps selections are based on our full-course observations and contain items sampling the whole-course counseling which are recorded from Jan. 1st, 2018 to Dec. 15th, 2022. IDs are aligned by eliminating blank samples and obvious contradictory ones with inconsistent user complaints and interaction contents are removed.
 ```python
 # chronic_temp_X1
 dateStr5 = dt.strptime('2020-01-01', '%Y-%m-%d')
@@ -1430,14 +1430,14 @@ snsCondition4 = dialog.answerLagTotal.values > 365
 dialog = dialog.drop(dialog[(snsCondition3)|(snsCondition4)].index)
 ```
 ### Filtering
-Items with proper sentence lengths are included, ones with extreme short sentence are eliminated, and ones with out-of-range, maximum and minimum values are removed.
+Items with proper sentence lengths are included, ones with extremely short sentences are eliminated, and ones with out-of-range, maximum, and minimum values are removed.
 ```python
 textText.text_length.quantile(0.1)
 textText = textText[textText['text_length'] > 1]
 textText = textText[textText['text_length'] <= 250]
 ```
 ### Segmentation
-Segmentation. Sentence-level segmented contents are reframed by Jieba toolkit, then the numbers and punctuation marks of the content are eliminated, and remaining tokenized texts are formatted, which retains only the adverbs, adjectives, and entities including information about the counseling and counseling quality in medical specialty.
+Segmentation. Sentence-level segmented contents are reframed by Jieba toolkit, then the numbers and punctuation marks of the content are eliminated, and the remaining tokenized texts are formatted, which retains only the adverbs, adjectives, and entities including information about the counseling and counseling quality in medical specialty.
 ### Stopwords
 Chinese stop words (for Chinese reviews using the Harbin Institute of Technology list), context-specific stop words such as the name of the structured instructive words, and platform-specific words were excluded.
 ```python
@@ -1453,7 +1453,7 @@ textText['record'] = textText['record'].astype(str)
 textText['review_seg'] = textText['record'].apply(lambda x : ' '.join([j.strip() for j in jieba.lcut(x) if j not in my_stopwords]))
 ```
 ### Diagnosis-oriented embedding 
-1)	For medical-domain-specific texts, we stem and lemmatize keywords generating groups to include effective clusters.
+1)	For medical-domain-specific texts, we stem and lemmatize each medical term to include effective clusters.
 ```python
 ind_chronic = list(textText.loc[textText['review_seg'].str.contains(pattern)]['index'])
 chronicdata = textText[[i in ind_chronic for i in textText['index']]]
@@ -1494,6 +1494,8 @@ def extract_top_n_words_per_topic(tf_idf, count, docs_per_topic, n=20):
     top_n_words = {label: [(words[j], tf_idf_transposed[i][j]) for j in indices[i]][::-1] for i, label in enumerate(labels)}
     return top_n_words
 ```
+Finally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answers from physicians.
+
 ## Dataframe Column Details
 
 <class 'pandas.core.frame.DataFrame'>  
