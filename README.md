@@ -1496,6 +1496,8 @@ def extract_top_n_words_per_topic(tf_idf, count, docs_per_topic, n=20):
 ```
 Finally, 383,278 pieces of return visits items were included after data preprocessing, including corpus about complaints, asking from patients, and answers from physicians.
 
+![image](https://github.com/alexluoqk/ccm/blob/master/resultCluster.png)
+
 ## Dataframe Column Details
 
 <class 'pandas.core.frame.DataFrame'>  
